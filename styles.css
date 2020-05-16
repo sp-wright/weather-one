@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url("images/bg-1.jpg");
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+
+header {
+  padding: 15vh 10% 10vh 10%;
+}
+
+#title {
+  position: absolute;
+  left: 2vh;
+  top: 2vh;
+}
+
+.search-box {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  padding: 1rem 3rem;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.329);
+}
+
+input[type="text"] {
+  color: rgba(41, 40, 40, 0.781);
+}
+
+::placeholder {
+  color: rgba(90, 89, 89, 0.5);
+}
+
+.search-box:focus {
+  background: rgba(255, 255, 255, 0.6);
+  outline: none;
+}
+
+.search-box:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+  padding: 0 0 3vh 0;
+}
+
+.city {
+  font-size: 2rem;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.current {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 225px;
+  height: 225px;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px rgba(0, 0, 0, 0.329));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.temp span {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.weather {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
