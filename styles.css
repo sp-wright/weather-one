@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  padding: 15vh 10% 10vh 10%;
+  padding: 15vh 0 10vh 0;
 }
 
 #title {
@@ -38,7 +38,7 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   border-radius: 4px;
-  padding: 1rem 3rem;
+  padding: 1rem 2.25rem;
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 1px 1px rgba(0, 0, 0, 0.329);
 }
@@ -96,4 +96,10 @@ input[type="text"] {
 .weather {
   font-size: 1.75rem;
   font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-position: top left -125px;
+  }
 }
